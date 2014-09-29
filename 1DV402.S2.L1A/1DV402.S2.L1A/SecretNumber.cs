@@ -8,17 +8,18 @@ namespace _1DV402.S2.L1A
 {
     class SecretNumber
     {
-        int _Number;
         int _Count;
-            public void initialize(); 
+        int _Number;
+        public const int MaxNumberOffGuesses = 7;
+        public SecretNumber()
         {
 
         }
-            public bool MakeGuess (int number);
+        public void Initialize()
         {
-
+          
         }
-           public SecretNumber();
+        public bool MakeGuess(int number)
         {
 
         }
