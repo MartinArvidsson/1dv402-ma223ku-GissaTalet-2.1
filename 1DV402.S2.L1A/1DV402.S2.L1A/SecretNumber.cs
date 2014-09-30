@@ -31,10 +31,12 @@ namespace _1DV402.S2.L1A
             if (number == _number) // Om svaret är korrekt presenteras det med hur många försök det tog
             {
                 Console.WriteLine("Korrekt! efter {0} försök fick du fram talet {1}", _count, _number);
+                return true;
             }
             if (_count == MaxNumberOffGuesses) // vad som visas när du har slut på gissningar
             {
                 Console.WriteLine("Du har slut på gissningar, Svaret var {0}", _number);
+                return true;
             }
             if (number < 1 || number > 100) // om du gissar lägre eller högre än vad som är max/min körs ett undantag.
             {
