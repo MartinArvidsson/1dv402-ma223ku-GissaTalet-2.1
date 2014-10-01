@@ -35,8 +35,8 @@ namespace _1DV402.S2.L1A
             }
             if (_count == MaxNumberOffGuesses) // vad som visas när du har slut på gissningar
             {
-                Console.WriteLine("Du har slut på gissningar, Svaret var {0}", _number);
-                return true;
+                Console.WriteLine("Du har slut på dina {0} gissningar, Svaret var {1}", MaxNumberOffGuesses, _number);
+                return false;
             }
             if (number < 1 || number > 100) // om du gissar lägre eller högre än vad som är max/min körs ett undantag.
             {
@@ -52,6 +52,7 @@ namespace _1DV402.S2.L1A
                 Console.WriteLine("{0} är ett för litet tal, gissa högre.", number, (MaxNumberOffGuesses - _count));;
                 return false;
             }
+            return false;
 
         }
     }
